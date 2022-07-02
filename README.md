@@ -44,8 +44,9 @@ func main() {
 
 	fmt.Printf("Original:\n\n%s\n\n", s)
 	fmt.Printf("Prepared:\n\n%s\n\n", wordwrap.Prepare(s))
-	fmt.Printf("Wrapped (60 runes):\n\n%s\n\n", wordwrap.WrapText(s, 60))
-	fmt.Printf("Wrapped and indented (60 runes):\n\n%s\n\n", wordwrap.Wrap(s, 60, "    "))
+	fmt.Printf("Wrapped (60 runes width):\n\n%s\n\n", wordwrap.WrapText(s, 60))
+	fmt.Printf("Wrapped and indented (60 runes width):\n\n%s\n\n", wordwrap.Wrap(s, 60, "    "))
+	fmt.Printf("Wrapped and indented (40 runes width):\n\n%s\n\n", wordwrap.Wrap(s, 40, "    "))
 }
 ```
 
